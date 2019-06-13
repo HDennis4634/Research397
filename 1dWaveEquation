@@ -1,0 +1,20 @@
+import numpy as np                 # This imports the things we need in order to calculate and graph the wave function.
+import matplotlib.pyplot as plt
+
+from numpy import pi
+------------
+
+
+# label all constants and boundary conditions
+
+c = 2.0  # The speed of the wave
+
+L = 2*pi # Length of the rope that the wave travels through
+
+t0 = 0 # The intitial time 
+
+dt = 100 # Amount of inervals in which the time is calculated 
+
+
+def u(x,t):                                      # This defines the solution to the wave equation
+    return (1/2)*(np.sin(x-c*t) + np.sin(x+c*t))
